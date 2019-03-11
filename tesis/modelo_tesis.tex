@@ -1,0 +1,252 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[a4paper,left=3cm,right=3cm,tmargin = 3cm]{geometry}
+%\linespread{1.6}
+\usepackage{leading}
+%\leading{1 cm}
+
+\usepackage{xcolor}
+\definecolor{orange}{rgb}{1,0.5,0}
+\usepackage{amssymb,amsmath,alltt}
+\usepackage{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{setspace}
+\usepackage{epsfig}
+\usepackage{lscape}
+\usepackage{subfigure}
+
+\usepackage{longtable}
+\usepackage[T1]{fontenc}
+
+\def\changemargin#1#2{\list{}{\topmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+
+\DeclareMathOperator{\supess}{supess}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amssymb,latexsym,amsthm,amscd}
+%\usepackage[ansinew]{inpute
+
+\usepackage{times}
+%\hyphenation{Python te-ne-mos cons-tan-tes Windows pro-ble-ma re-qui-si-tos o-pe-ra-do-res e-qui-li-brio ob-te-ne-mos ob-te-ni-do di-fe-ren-cial Fa-cul-tad}
+%\hyphenation{mo-de-la li-mi-ta-do ge-ne-ral-men-te pue-den es-ta-bi-li-dad des-cri-ba e-xis-ten-ce e-va-l\'u-e a-pro-xi-ma-ci-\'on}
+%\hyphenation{a-sin-t\'o-ti-ca-men-te Newton ins-tan-te ge-ne-ra-dor ve-ri-fi-car u-ni-di-men-sio-nal ex-pe-ri-men-ta sa-tis-fa-cer li-ne-al de-sa-rro-llar}
+%\hyphenation{mo-di-fi-car}
+
+\usepackage{psfrag}
+%\usepackage[hypertex]{hyperref}[2003/11/30]
+%\usepackage{lscape}|
+%\usepackage{afterpage}
+\usepackage{float}
+%\usepackage{longtable}
+%\usepackage{marvosym}
+%\usepackage{titlesec}
+
+\usepackage{verbatim}
+
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{acknowledgement}[theorem]{Agradecimiento}
+\newtheorem{algorithm}[theorem]{Algoritmo}
+\newtheorem{assumption}{Suposici\'on}[section]
+\newtheorem{axiom}[theorem]{Axioma}
+\newtheorem{case}[theorem]{Caso}
+\newtheorem{claim}[theorem]{Afirmaci\'{o}n}
+\newtheorem{conclusion}[theorem]{Conclusi\'{o}n}
+\newtheorem{condition}[theorem]{Condici\'{o}n}
+\newtheorem{conjecture}[theorem]{Conjetura}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{criterion}[theorem]{Criterio}
+\newtheorem{definition}[theorem]{Definici\'{o}n}
+\newtheorem{exercise}[theorem]{Ejercicio}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{notation}[theorem]{Notaci\'{o}n}
+\newtheorem{problem}[theorem]{Problema}
+\newtheorem{proposition}[theorem]{Proposici\'{o}n}
+\newtheorem{remark}{Oservaci\'on}
+\newtheorem{solution}[theorem]{Soluci\'{o}n}
+\newtheorem{summary}[theorem]{Resumen}
+%\newenvironment{demos}[1][Demos]{\noindent\textbf{#1.} }
+
+\newtheorem{def_app}{Definici\'{o}n}
+\newtheorem{lem_app}{Lema}[section]
+\newtheorem{teo_app}{Teorema}
+\newtheorem{demos_lem}[]{Demostraci\'{o}n}
+\newtheorem{demos}[]{Demostraci\'{o}n}
+\newtheorem{coro}{Corolario}
+\newtheorem{demos_coro}[]{Demostraci\'{o}n}
+
+%\newenvironment{prueba}[1][Prueba]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\newtheorem
+\newenvironment{prueba}[1][Demostraci\'{o}n]{\noindent\textbf{#1.} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{./thesinput.tex}
+
+
+%\includeonly{aprobacion,catalografica,dedicatoria,resumen,agradecimientos,3.capitulo01,3.capitulo02}
+
+\begin{document}
+
+\makeatletter
+\def\@roman#1{\romannumeral #1}
+\makeatother
+
+\pagenumbering{roman}\setcounter{page}{2}    
+
+\input{title}
+\clearemptydoublepage
+\include{aprobacion}
+\clearemptydoublepage
+\include{catalografica}
+%\clearemptydoublepage
+\include{dedicatoria}
+%\clearemptydoublepage
+\include{agradecimientos}
+
+%\leading{0.8 cm}
+\clearemptydoublepage
+\include{resumen}
+\clearemptydoublepage
+\include{abstract}
+
+%\leading{1 cm}
+\clearemptydoublepage
+\tableofcontents
+
+\include{prodvectorial}
+\include{ch1}
+%\include{3.apendice3}
+%\clearemptydoublepage
+%Otros apendices
+%\bibliographystyle{abbrv}
+%\bibliography{myblib}
+\begin{thebibliography}{}
+
+\bibitem{A-P}\label{AP}
+Álvarez, F.; Peypouquet, J.
+\newblock{\em Introducci\'on a la Teor\'ia de Semigrupos}
+\newblock Apuntes para la III Escuela de Verano; Universidad de Chile, 2003.
+
+\bibitem{A-H}\label{AH}
+Atkinson, K.; Han, W.
+\newblock{\em Theoretical Numerical Analysis: a functional analysis framework}
+\newblock Texts in applied mathematics; 39.
+
+\bibitem{B-F}\label{BF}
+Burden, R.; Faires, J.
+\newblock{\em An\'alisis Num\'erico}
+\newblock Thomson Learning, Mexico, D.F. 2002.
+
+\bibitem{Br}\label{Br}
+Brezis, H.
+\newblock{\em Analyse fonctionnelle: the\'orie et applications}
+\newblock Masson, Paris, 1983
+
+\bibitem{Ca}\label{Ca}
+Carbajal P., Efra\'in
+\newblock{\em Una clase de algor\'itmos de alta precisi\'on para un sistema acoplado}.
+\newblock PESQUIMAT, Revista de la Unidad de Post Grado - UNMSM, Vol. 3, Nro. 1, Junio 1999, pag. 1-14.
+
+\bibitem{Cod}\label{Cod}
+Code\c{c}o Coelho, F.
+\newblock{\em Computa\c{c}ão cient\'ifica com Python : Uma introdu\c{c}ão �  programa\c{c}ão para cientistas}
+\newblock Petr\'opolis - RJ, 2007.
+
+\bibitem{Cun}\label{Cun}
+Cunha, C. A.
+\newblock{\em Semigrupos Aplicados a Sistemas Dissipativos em EDP}
+\newblock Florian\'opolis, SC: SBMAC, 2007.
+
+
+\bibitem{Daf}\label{Daf}
+Dafermos, C. M.
+\newblock{\em On the existence and the asymptotic stability of solution to the equatios of linear thermoelasticity}
+\newblock Arch. Rational Mech. Anal., 29 (1968), 241-271.
+
+\bibitem{Hoff}\label{Hoff}
+Hoffman, Joe D.
+\newblock{\em Numerical methods for engineers and scientists}
+\newblock Marcel Dekker, Inc. 2001.
+
+\bibitem{Ji-Rac}\label{Ji-Rac}
+Jiang, Song; Racke, Reinhard
+\newblock{\em Evolution Equations in Thermoelasticity}.
+\newblock Chapman \& Hall/CRC. 2000.
+
+\bibitem{Jo}\label{Jo}
+Johnson, A.
+\newblock{\em The Fundamental Theorem of Numerical Analysis}.
+\newblock 2006.
+
+\bibitem{Kin}\label{Kin}
+Kincaid, David; Ward, E.   
+\newblock{\em Numerical analysis : mathematics of scientific computing}
+\newblock Brooks/Cole Publishing Company. 1990.
+
+\bibitem{Kr}\label{Kr}
+Kreyszig, E.
+\newblock{\em Introductory functional analysis with applications.}
+\newblock John Wiley e Sons, 1978.
+
+\bibitem{Mu}\label{Mu}
+Mu\~noz Rivera, J.E.
+\newblock{\em Semigrupos e Equa\c{c}\~{o}es Diferenciais Parciais}
+\newblock Laborat\'orio Nacional de Computa\c{c}ão Cient\'ifica, Textos de p\'os gradua\c{c}ão.
+
+\bibitem{Mu-1}\label{Mu1}
+Mu\~noz Rivera, J.E.
+\newblock{\em Energy decay rates in linear thermoelasticity}
+\newblock Funkcialaj Ekvacioj, 35(1) (1992), 19-30.
+
+\bibitem{Pa}\label{Pa}
+Pazy, A.
+\newblock{\em Semigroups of linear operators and applications to partial differential equations}
+\newblock Springer-Verlag, New York 1983.
+
+\bibitem{Pe-Mz}\label{Pe-Mz}
+Pereira, D.C.; Menzala, G.P.
+\newblock{\em Exponential decay of solutions in thermoelasticity}
+\newblock Comp. Appl. Math., 8(1989), 192-204.
+
+\bibitem{Ra}\label{Ra}
+Racke, R.
+\newblock{\em Exponential decay for a class of initial boundary value problems in thermoelasticity}
+\newblock Comp. Appl. Math., 12(1993), 67-80.
+
+\bibitem{R-K}\label{RK}
+Richtmyer, R.D.; Morton, K.W.
+\newblock{\em Difference Methods for Initial Value Problems}
+\newblock Interscience Publishers, New York, 1967.
+
+\bibitem{St-Bu}\label{StBu}
+Stoer, J.; Bulirsch, R.
+\newblock{\em Introduction to numerical analysis}
+\newblock Springer-Verlag New York, Inc. 1992.
+
+\bibitem{Yo}\label{Yo}
+Yosida, Kôsaku 
+\newblock{\em Functional Analysis}.
+\newblock Splinger-Verlag, Berlin Heidelberg New York 1980.
+
+\bibitem{Zua}\label{Zua}
+Zuazua, Enrique 
+\newblock{\em T\'opicos de An\'alisis Num\'erico}.
+\newblock Departamento de Matem\'aticas, Universidad Aut\'onoma. Madrid, Espa\~na.
+
+% Brezis -- kreyzig
+
+
+
+
+\end{thebibliography}
+
+
+\clearemptydoublepage
+\end{document}

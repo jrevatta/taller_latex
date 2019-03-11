@@ -1,0 +1,598 @@
+\chapter{PRODUCTO VECTORIAL}
+%{\ref{producto.vectorial} \sc Producto vectorial}
+
+\section{ Producto vectorial.}
+\label{producto.vectorial}
+
+\bigskip
+Consideremos la terna ordenada de vectores de $V$, $\{
+\overrightarrow{i} ,\overrightarrow{j} ,\overrightarrow{k} \}$,
+que constituye una base de $V$. Estas las vamos a clasificar en
+dos grupos: uno formado por las ternas $\left\{ {i^{} ,j,k }
+\right\}$ tales que para un observador parado en $v_3$, la
+rotaci\'{o}n de \'{a}ngulo convexo (o sea, de medida $< \pi $) que
+lleva $i$ en $j$ es de sentido antihorario; el otro formado por
+las ternas en las que esa rotaci\'{o}n tiene sentido horario.
+% Warning: EPS-printer was not specified  -- Figure omitted!
+
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.4]{orienta.eps}
+\end{figure}
+
+\bigskip
+
+Para definir el producto vectorial necesitamos elegir uno de los
+dos tipos como terna preferida. Nos quedaremos para esto con las
+ternas del primer tipo que llamaremos \textbf {positivas}.
+\bigskip
+
+Esta convenci\'{o}n sirve para definir el producto vectorial como
+una funci\'{o}n de $V \times V\,\,en\,\,V$ (as\'{\i} como el
+producto escalar era una funci\'{o}n de $V \times
+V\,\,\,en\,\,\,\,\mathbb{R}$) que a cada par de vectores $v,w$ le
+asocia un vector, que denotaremos $v$ $ \wedge $ $w$, que cumple:
+
+\noindent a) $\left\| {v \wedge w} \right\| = \left\| {v}
+\right\|.\left\| {w} \right\|.sen\,\theta $  ($\theta $ \'{a}ngulo
+de \textit{v} \,\, con \,\, \textit{w} )
+
+\noindent b) $\left( {v \wedge w} \right).v = 0\,\,y\,\,\left( {v
+\wedge w} \right).w = 0$
+
+\noindent c) Si $v \ne 0\,\,\,\,y\,\,\,\,w \ne 0$ la terna
+$\left\{ {v,w,v \wedge w} \right\}$ es positiva.
+
+
+\bigskip
+
+\textbf{Propiedades:}
+
+\textbf{1)} $\left\| {v \wedge w} \right\|$ es el doble del
+\'{a}rea del tri\'{a}ngulo determinado por esos vectores.
+
+
+\textbf{2)} $v \wedge w = 0$ si y s\'{o}lo si \textit{v }y w son
+colineales (en particular, si alguno de ellos es el vector $0$).
+
+
+\textbf{3) }Respecto de la condici\'{o}n  c) de la definici\'{o}n,
+corresponde observar que si $v \wedge w \ne 0$ la terna $\left\{
+{v,w,v \wedge w} \right\}$ es una base, pues por b) esos vectores
+no son coplanares salvo que \textit{v }y w sean colineales, en
+cuyo caso $v \wedge w = 0$
+
+\textbf{4) }$v \wedge w =  - \left( {w \wedge v} \right)$ ( en
+particular , esta operaci\'{o}n no es conmutativa) Para verificar
+esto basta notar que si para cierto observador la rotaci\'{o}n del
+\'{a}ngulo $ < \pi $ que lleva \textit{v }en w es de sentido
+antihorario, para el mismo observador la que lleva w en \textit{v
+}es de sentido horario. De modo que el observador debe ubicarse
+del lado opuesto del plano u,w para que esa rotaci\'{o}n aparezca
+de sentido trigonom\'{e}trico . Luego esa debe ser la
+ubicaci\'{o}n de $w \wedge v$ para que la terna $\left[ {w,v,w
+\wedge v} \right]$ sea positiva.
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.5]{vectorial.eps}
+\end{figure}
+%\begin{center}
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\end{center}
+\textbf{5) }Este producto no es asociativo. Se puede deducir que:
+\[
+\left( {u \wedge v} \right) \wedge w + \left( {v \wedge w} \right)
+\wedge u + \left( {w \wedge u} \right) \wedge v = 0
+\] de donde, usando 4), $\left( {u \wedge v} \right) \wedge w = u
+\wedge \left( {v \wedge w} \right) + v \wedge \left( {w \wedge u}
+\right)$, y como en general $v \wedge \left( {w \wedge u} \right)
+\ne 0$, la propiedad asociativa no vale.
+
+\textbf{6) }Para todo $\lambda  \in \mathbb{R}$: $\lambda \left(
+{v \wedge w} \right) = \left( {\lambda v} \right) \wedge w = v
+\wedge \left( {\lambda w} \right)$. Esta propiedad se deduce
+directamente de la definici\'{o}n en el caso $\lambda  \ge
+0$. Para el caso $\lambda  < 0$, hay que observar que del hecho
+que la terna $\left\{ {v,w,v \wedge w} \right\}$ es positiva se
+deduce que $\left\{ { - v,w, - \left( {v \wedge w} \right)}
+\right\} $ y
+\\ $ \left\{ {v, - w, - \left( {v \wedge w} \right)} \right\}$ son
+tambi\'{e}n positivas.
+
+\textbf{7) }El producto vectorial es distributivo respecto de la
+suma de vectores. Esto es:
+
+\noindent a) $\left( {v_1  + v_2 } \right) \wedge w = v_1 \wedge w
++ v_{2}^{}  \wedge w.$
+
+
+\noindent b) $v \wedge \left( {w_{1}^{}  + w_{2}^{} } \right) = v
+\wedge w_{1}^{}  + v \wedge w_{2}^{}. $
+
+\noindent Para demostrar esta propiedad hacemos algunas
+observaciones previas. En primer lugar, observamos que llamando
+$\pi $ al plano con vector normal \textit{v }e indicando por $p $
+\textit{w} la proyecci\'{o}n de \textit{w} sobre ese plano, y con
+$r(p\textit{w})$ el vector que se obtiene rotando esa
+proyecci\'{o}n un \'{a}ngulo de medida $\pi /2$ en sentido
+antihorario observado desde $v$, se verifica que: $v \wedge w =
+\left\| {v} \right\|.r\left( {pw} \right)$ pues
+ $\left\| {r\left( {pw} \right)} \right\| = \left\| {pw} \right\| = \left\|
+{w} \right\|.sen\,\theta $ (ver figura)
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.4]{propvec.eps}
+\end{figure}
+%\begin{center}
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\end{center}
+
+
+\bigskip
+
+%\begin{center}
+%FIGURA 4.1
+%\end{center}
+
+
+\bigskip
+
+Como $p\left( {w_{1}^{}  + w_{2}^{} } \right) = pw_{1}^{}  +
+pw_{2}^{} $ y $r\left( {pw_{1}^{}  + pw_{2}^{} } \right) = r\left(
+{pw_{1}^{} } \right) + r\left( {pw_{2}^{} } \right)$ tendremos
+que: $v \wedge \left( {w_{1}^{} \wedge w_{2}^{} } \right) =
+\left\| {v} \right\|.r\left( {p\left( {w_{1}^{} + w_{2}^{} }
+\right)} \right)$$ = \left\| {v} \right\|.r\left( {pw_{1}^{} }
+\right) + \left\| {v} \right\|.r\left( {pw_{2}^{} } \right) = v
+\wedge w_{1}^{}  + v \wedge w_{2}^{} $.
+
+
+As\'{\i} se prueba b) y an\'{a}logamente se obtiene a).
+
+\textbf{8) }Si $ \{i,j,k\}$ es una base ortonormal positiva de $V$
+, entonces:
+\[
+{\begin{array}{l}
+ i \wedge i = j \wedge j = k \wedge k = 0; \\
+ i \wedge j = k;\;\;j \wedge k = i;\;\;k \wedge i = j \\
+  \\
+ \end{array}}
+\]
+(es decir, en la sucesi\'{o}n ($i,j,k,i,j, \cdots$) el producto de
+dos vectores sucesivos da el que le sigue):
+\[
+j \wedge i =  - k,\,k \wedge j =  - i;\,i \wedge k =  - j
+\]
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.5]{ijk.eps}
+\end{figure}
+
+\textbf{9) }De 4.6), 4.7) y 4.8) resulta que si $v = a_{1}^{} i +
+a_{2}^{} j + a_{3}^{} k$ y $w = b_{1}^{} i + b_{2}^{} j + b_{3}^{}
+k$.
+ entonces:
+\[
+v \wedge w = \left( {a_{2}^{} b_{3}^{}  - a_{3}^{} b_{2}^{} }
+\right)i - \left( {a_{1}^{} b_{3}^{}  - a_{3}^{} b_{1}^{} }
+\right)j + \left( {a_{1}^{} b_{2}^{}  - a_{2}^{} b_{1}^{} }
+\right)k.
+\]
+Obs\'{e}rvese que este resultado puede recordarse pensando en el
+desarrollo por la primer fila de un determinante:
+\[
+\left| {{\begin{array}{*{20}c}
+  {i} \hfill & {j} \hfill & {k} \hfill  \\
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right| = \left( {a_{2}^{} b_{3}^{}  - a_{3}^{} b_{2}^{} }
+\right)i - \left( {a_{1}^{} b_{3}^{}  - a_{3}^{} b_{1}^{} }
+\right)j + \left( {a_{1}^{} b_{2}^{}  - a_{2}^{} b_{1}^{} }
+\right)k
+\]
+Esta expresi\'{o}n del producto vectorial puede tambi\'{e}n
+tomarse como su definici\'{o}n. M\'{a}s precisamente, dada una
+terna ortonormal cualquiera \{\textit{i,j,k}\} (positiva o
+negativa), puede definirse el producto de dos vectores por la
+expresi\'{o}n dada en 4.9). Se comprueba entonces sin dificultad
+que el vector:
+ $u = \left( {a_{2}^{} b_{3}^{}  - a_{3}^{} b_{2}^{} } \right)i - \left(
+{a_{1}^{} b_{3}^{}  - a_{3}^{} b_{1}^{} } \right)j + \left(
+{a_{1}^{} b_{2}^{}  - a_{2}^{} b_{1}^{} } \right)k$ verifica
+$\left\| {u} \right\| = \left\| {v} \right\|.\left\| {w}
+\right\|.sen\,\theta $ y $u.v = u.w = 0$. Si adem\'{a}s $
+\{i,j,k\}$ es una terna positiva puede verificarse, que $
+\{v,w,u\}$ es tambi\'{e}n positiva. Luego $u = v \wedge w$ , por
+lo tanto esta definici\'{o}n de $v \wedge w$ coincide con la
+inicial.
+\bigskip
+
+\subsection{Aplicaciones geom\'{e}tricas.}
+
+\textbf{a ) }\textbf {Distancia de un punto a una recta:} sea r
+una recta dada por un punto A y un vector \textit{v}. La distancia
+de Q a r es:
+\[
+d\left( {Q,r} \right) = \left| {d\left( {Q,A} \right).sen\,\theta
+} \right| = \left\| {AQ} \right\|.sen\,\theta  = \frac{{\left\|
+{AQ \wedge v} \right\|}}{{\left\| {v} \right\|}}
+\]
+
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.4]{puntorecta.eps}
+\end{figure}
+%\begin{center}
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\end{center}
+%
+%
+%\bigskip
+%
+%\begin{center}
+%FIGURA 5.1
+%\end{center}
+
+
+\bigskip
+
+Si $A = ( x_{o} ,y_{o} ,z_{o});\,\,Q = (\overline {x} ,\overline
+{y} ,\overline {z} );\,v = ai\, + \,bj\, + \,ck$ entonces la
+distancia es $ d(Q,r)=$ $$
+\frac{\sqrt{[(\overline{y}-y_{0})c-(\overline{z}-z_{0})b]^{2}+
+[(\overline{x}-x_{0})c-(\overline{z}-z_{0})a]^{2}+[(\overline{x}-x_{0})b-(\overline{y}-y_{0})a]^{2}}}
+{\sqrt{a^{2}+b^{2}+c^{2}}}$$
+
+\bigskip
+
+\begin{ejemplo}\label{piej5.1}En el punto 3 de este cap\'{\i}tulo se vieron
+algunas superficies de revoluci\'{o}n particulares. Sea $r\left\{
+\begin{array}{l}
+ {x = y} \\
+ {z = 0}
+ \end{array} \right.$ $C:\left\{ \begin{array}{l}
+ {x = 0} \\
+ {zy = 1}
+ \end{array} \right.$. Hallar la superficie de revoluci\'{o}n de eje r
+y generatriz C.
+
+Las ecuaciones son:
+\[
+\left\{ \begin{array}{l}
+ {x_{0}^{}  = 0                                 ,\,\,\,            P_{0}^{}  \in C}
+\\
+ {z_{0}^{} y_{0}^{}  = 1                  ,\,\,\,                        P_{0}^{}
+\in C} \\
+ {x - x_{0}^{}  + y - y_{0}^{}  = 0              ,\,\,\,            plano ,\,\,\, \pi ,\,\,\, por
+,\,\,\, P_{0}^{}  \bot r} \\
+ {2z^{2} + \left( {x - y} \right)^{2} = 2z_{0}^{2}  + \left( {x_{0}^{}  -
+y_{0}^{} } \right)^{2} ,\,\,\,  dist\left( {P,r} \right) =
+dist\left( {P_{0}^{} ,r} \right)}
+ \end{array} \right.
+\]
+eliminando $x_{0}^{} ,y_{0}^{} ,\,z_{0}^{} $ resulta $\left( {x +
+y} \right)^{2}\left( {z^{2} - 2xy} \right) = 1$
+\end{ejemplo}
+
+\vspace{.5cm}
+
+b)\textbf{Intersecci\'{o}n de dos planos no paralelos:}
+
+Sea $r:\left\{ \begin{array}{l}
+ {ax + by + cz + d = 0} \\
+ {a'x + b'y + c'z + d' = 0}
+ \end{array} \right.$ una recta (dada como intersecci\'{o}n de dos
+planos no paralelos). Supongamos que queremos las ecuaciones
+param\'{e}tricas de esa recta, es decir, las de la forma: $x =
+x_{0}^{}  + \lambda p,\,\,y = y_{0}^{}  + \lambda q,\,\,z =
+z_{0}^{}  + \lambda r$ (o tambi\'{e}n $P = P_{0}^{}  + \lambda
+v$). Para esto se necesita hallar un punto $P_{0}^{}  = \left(
+{x_{0}^{} ,y_{0}^{} ,z_{0}^{} } \right)$ de la recta y un vector
+$v = p\,i + q\,j + r\,k$ de la direcci\'{o}n de r.
+\bigskip
+Esto se puede hacer sin usar el producto vectorial, resolviendo el
+sistema de ecuaciones
+\[
+\left\{ \begin{array}{l}
+ {ax + by + cz + d = 0} \\
+ {a'x + b'y + c'z + d' = 0}
+ \end{array} \right.
+\]
+Usando el producto vectorial: tomar $P_{0}^{}  = \left( {x_{0}^{}
+,y_{0}^{} ,z_{0}^{} } \right)$ una soluci\'{o}n particular del
+sistema de ecuaciones. Si el sistema de coordenadas es ortogonal,
+entonces:
+ $n = ai + bj + ck\,\,y\,\,n' = a'i + b'j + c'k$ son vectores normales a los
+planos, y entonces $n \wedge n'$ es un vector de la
+intersecci\'{o}n de ambos planos (luego, est\'{a} en la
+direcci\'{o}n de la recta de intersecci\'{o}n de ambos).
+
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.4]{planos.eps}
+\end{figure}
+%\begin{center}
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\end{center}
+%
+%\bigskip
+%\begin{center}
+%FIGURA 5.2
+%\end{center}
+
+Luego: $n \wedge n'$$ = \left( {bc' - b'c} \right)i - \left( {ac'
+- \,ca'} \right)j + \left( {ab' - ba'} \right)k$ es de la
+direcci\'{o}n de r.
+
+\bigskip
+\textbf{c ) }\textbf {Distancia entre dos rectas:} Se define la
+distancia $d\left( {r,r'} \right)$ entre dos rectas $r,r'$ como el
+m\'{\i}nimo de $d\left( {P,P'} \right)$ donde $P \in r$ y $P' \in
+r'$.
+
+Es claro que este m\'{\i}nimo se obtiene cuando la recta $PP'$ es
+perpendicular al mismo tiempo a $r $ y a $r'$. Sea $ r $ dada por
+un punto $A \in r$ y un vector $v$  de su direcci\'{o}n y $r'$ por
+$B \in r$ y un vector $w$.
+
+
+Para tener $d\left( {r,r'} \right)$: si \textit{r} y \textit{r'}
+son paralelas: basta tomar el punto A y hallar $dist\left( {A,r'}
+\right)$; si $r$ y $r'$ se cortan: $d\left( {r,r'} \right)$= 0.
+
+
+\begin{figure}[htb]
+\centering
+FIGURA%
+FIGURA%\includegraphics[scale=0.5]{rectarecta.eps}
+\end{figure}
+%\begin{center}
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\end{center}
+%\bigskip
+%\begin{center}
+%FIGURA 5.3
+%\end{center}
+
+\bigskip
+
+Supongamos ahora que \textit{r} y \textit{r'} no son coplanares.
+Si \textit{s} es la perpendicular com\'{u}n , $P_{o} \,\, =
+\,\,s\,\, \cap \,\,r^{}$  y  $P_{0}^{'}  = s \cap r'$, entonces:
+ $d\left( {r,r'} \right) = d\left( {P_{0}^{} ,P_{0}^{'} } \right) = d\left(
+{A,\pi } \right)$ donde $\pi $  es el plano paralelo a \textit{r}
+que contiene a \textit{r'}. (ver figura) . Como versor de la
+direcci\'{o}n de \textit{s} puede tomarse $n = \frac{{v \wedge
+w}}{{\left\| {v \wedge w} \right\|}}$. Luego :
+\[
+d\left( {r,r'} \right) = d\left( {A,\pi } \right) =
+\frac{{1}}{{\left\| {v \wedge w} \right\|}}\left| {\left( {v
+\wedge w} \right).\overrightarrow{AB} } \right|
+\]
+
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.5]{normalcomun.eps}
+\end{figure}
+%\begin{center}
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\end{center}
+%
+%\bigskip
+%\begin{center}
+%FIGURA 5.3
+%\end{center}
+\bigskip
+
+\textbf{d ) }\textbf {Perpendicular com\'{u}n a dos rectas:} Si
+las dos rectas son paralelas, una perpendicular com\'{u}n es la
+recta perpendicular a una de ellas trazada por un punto de la
+otra. Si se interceptan , el problema es tambi\'{e}n f\'{a}cil de
+resolver. Supongamos ahora que las dos rectas no son coplanares.
+La perpendicular com\'{u}n $s$ est\'{a} en el plano $\pi $ de $s$
+y $r$, y en el $\pi $' determinado por $s$ y $r'$. Luego $s = \pi
+\cap \pi '$. Dada la direcci\'{o}n \textit{v }de \textit{r} y la
+$w$ de \textit{r'}, y $A \in r,\,\,B \in r'$, el plano $\pi $
+queda determinado por $A$,\textit{v} y $v \wedge w$. El $\pi $'
+por B,\textit{w},$v \wedge w$, pues $v \wedge w$ es un vector de
+la direcci\'{o}n de \textit{s}. Las ecuaciones de $\pi $ y $\pi $'
+as\'{\i} obtenidas constituyen un par de ecuaciones que
+representan la recta \textit{s}.
+\bigskip
+
+\textbf{e ) }\textbf{Volumen de un tetraedro: }Consideremos un
+tetraedro dado por sus v\'{e}rtices $A, B, C, D$. Su volumen es $V
+= \frac{{1}}{{3}}$ \'{a}rea de la base $ \times $ altura.
+Tendremos: \'{a}rea base = $1/2\left\| {\left( {B - A} \right)
+\wedge \left( {C - A} \right)} \right\|$.
+
+\begin{figure}[htb]
+\centering
+FIGURA
+%\includegraphics[scale=0.4]{tetra.eps}
+\end{figure}
+
+%% Warning: EPS-printer was not specified  -- Figure omitted!
+%
+%\bigskip
+%\begin{center}
+%FIGURA 5.4
+%\end{center}
+
+ Si \textit{n} es el versor normal a la base, la altura es $
+ \left| {n.\left( {D - A} \right)} \right|$\, con \,$n = \frac{{\left(
+{B - A} \right) \wedge \left( {C - A} \right)}}{{\left\| {\left(
+{B - A} \right) \wedge \left( {C - A} \right)} \right\|}}.$ Luego
+$V = 1/6.\left\| {\left( {B - A} \right) \wedge \left( {C - A}
+\right)} \right\|.\frac{{\left| {\left[ {\left( {B - A} \right)
+\wedge \left( {C - A} \right)} \right].\left( {D - A} \right)}
+\right|}}{{\left\| {\left( {B - A} \right) \wedge \left( {C - A}
+\right)} \right\|}}$
+\[ {\rm por\,\,\, lo\,\,\, que\,\,\,\,}
+V = 1/6.\left| {\left[ {\left( {B - A} \right) \wedge \left( {C -
+A} \right)} \right].\left( {D - A} \right)} \right|
+\]
+
+\bigskip
+
+\subsection{Producto mixto}
+\bigskip
+Es una operaci\'{o}n definida de $V\, \times \,\,V\,\, \times
+\,\,V\,$ en $\mathbb{R}$. Dados tres vectores $u,v, \,y\,\,w$,
+llamamos producto mixto al n\'{u}mero $\left( {v \wedge w}
+\right).u$ que indicamos $v \wedge w.u$, o tambi\'{e}n $u.\left(
+{v \wedge w} \right)$.
+\bigskip
+Consideremos un sistema ortonormal $\left\{ {i,j,k} \right\}$ y
+sean:
+\[
+v = a_{1}^{} i + a_{2}^{} j + a_{3}^{} k, w = b_{1}^{} i +
+b_{2}^{} j + b_{3}^{} k, u = c_{1}^{} i + c_{2}^{} j + c_{3}^{} k.
+\]
+Entonces:
+\[
+v \wedge w = \left| {{\begin{array}{*{20}c}
+  {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right|i - \left| {{\begin{array}{*{20}c}
+  {a_{1}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right|j + \left| {{\begin{array}{*{20}c}
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill  \\
+\end{array} }} \right|k.
+\]
+\[
+v \wedge w.u = \left| {{\begin{array}{*{20}c}
+  {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right|c_{1}^{}  - \left| {{\begin{array}{*{20}c}
+  {a_{1}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right|c_{2}^{}  + \left| {{\begin{array}{*{20}c}
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill  \\
+\end{array} }} \right|c_{3}^{} =
+\left| {{\begin{array}{*{20}c}
+  {c_{1}^{} } \hfill & {c_{2}^{} } \hfill & {c_{3}^{} } \hfill  \\
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right|
+\]
+\begin{center}
+(Por desarrollo por la primer fila de ese determinante)
+\end{center}
+Usando el hecho de que si se permutan dos filas de una matriz
+entre s\'{\i} el determinante s\'{o}lo cambia de signo, resulta
+que dos de esas permutaciones no cambian el determinante; luego:
+\[
+\left| {{\begin{array}{*{20}c}
+  {c_{1}^{} } \hfill & {c_{2}^{} } \hfill & {c_{3}^{} } \hfill  \\
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+\end{array} }} \right| = \left| {{\begin{array}{*{20}c}
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+  {c_{1}^{} } \hfill & {c_{2}^{} } \hfill & {c_{3}^{} } \hfill  \\
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+\end{array} }} \right| = \left| {{\begin{array}{*{20}c}
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill  \\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill & {b_{3}^{} } \hfill  \\
+  {c_{1}^{} } \hfill & {c_{2}^{} } \hfill & {c_{3}^{} } \hfill  \\
+\end{array} }} \right|
+\]
+En consecuencia: $\left( {v \wedge w} \right).u = \left( {u \wedge
+v} \right).w = \left( {w \wedge u} \right).v$. Es decir, que en la
+sucesi\'{o}n (\textit{u,v,w,u,v,w}) el producto vectorial de dos
+vectores sucesivos multiplicado escalarmente por el siguiente, da
+lo mismo cualesquiera sean los tres vectores sucesivos. Se puede
+entonces hablar del producto mixto de \textit{u, v, w} sin indicar
+si se trata de $\left( {u \wedge v} \right).w$ o de $u.\left( {v
+\wedge w} \right)$, pues el resultado es el mismo. Es por esto que
+se escribe (\textit{u,v,w}) como notaci\'{o}n para $\left( {u
+\wedge v} \right).w = u.\left( {v \wedge w} \right)$.
+
+Observamos que (\textit{v,w,u}) = 0 si y s\'{o}lo si
+\'{a}ng$\left( {v \wedge w,u} \right) = \pi /2$ o alguno de los
+vectores es el nulo. Como \'{a}ng $\left( {v \wedge w,v} \right) =
+\,\,\mbox{\'{a}ng}\,\,\left( {v \wedge w,w} \right) = \pi /2$ ,
+para que (\textit{v,w,u}) = 0 es necesario y suficiente que
+\textit{v, w} y \textit{u} sean coplanares. (Obs\'{e}rvese que
+esto podr\'{\i}a sacarse como conclusi\'{o}n del c\'{a}lculo del
+volumen del tetraedro. $(v,w,u) = 0$ si y s\'{o}lo si el volumen
+del tetraedro determinado por esos vectores es 0, esto es
+equivalente a decir que los vectores son coplanares).
+\bigskip
+
+Esta condici\'{o}n permite escribir la ecuaci\'{o}n vectorial del
+plano dado por tres puntos $A, B, C$ en otra forma. Decir que $P$
+pertenece a ese plano equivale a decir que los vectores $P-A, B-A$
+y $C-A$ son coplanares, o sea $(P-A,B-A,C-A) = 0$.
+
+
+Pasando a coordenadas, si \textit{P=}(x,y,z),\textit{A=}($a_{1}^{}
+,a_{2}^{} ,a_{3}^{} $), $B = \left( {b_{1}^{} ,b_{2}^{} ,b_{3}^{}
+} \right)$ y $C = \left( {c_{1}^{} ,c_{2}^{} ,c_{3}^{} } \right)$
+esta ecuaci\'{o}n se escribe:
+\[
+\left| {{\begin{array}{*{20}c}
+  {x - a_{1}^{} } \hfill & {y - a_{2}^{} } \hfill & {z - a_{3}^{} } \hfill
+\\
+  {b_{1}^{}  - a_{1}^{} } \hfill & {b_{2}^{}  - a_{2}^{} } \hfill &
+{b_{3}^{}  - a_{3}^{} } \hfill  \\
+  {c_{1}^{}  - a_{1}^{} } \hfill & {c_{2}^{}  - a_{2}^{} } \hfill &
+{c_{3}^{}  - a_{3}^{} } \hfill  \\
+\end{array} }} \right| = 0,\,\,\,\,
+ \mbox{\'{o}}\,\, \mbox{tambi\'{e}n:}\,\,\, \left| {{\begin{array}{*{20}c}
+  {x} \hfill & {y} \hfill & {z} \hfill & {1} \hfill  \\
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill & {1} \hfill
+\\
+  {b_{1}^{} } \hfill & {b_{2}^{} } \hfill & {b_{3}^{} } \hfill & {1} \hfill
+\\
+  {c_{1}^{} } \hfill & {c_{2}^{} } \hfill & {c_{3}^{} } \hfill & {1} \hfill
+\\
+\end{array} }} \right| = 0.\]
+Para ver esto obs\'{e}rvese que si se le resta la 2da. fila a la
+1ra., la 3da. y la 4ta. filas, el  determinante no cambia.
+As\'{\i} se tiene:
+\[
+\left| {{\begin{array}{*{20}c}
+  {x - a_{1}^{} } \hfill & {y - a_{2}^{} } \hfill & {z - a_{3}^{} } \hfill &
+{0} \hfill  \\
+  {a_{1}^{} } \hfill & {a_{2}^{} } \hfill & {a_{3}^{} } \hfill & {1} \hfill
+\\
+  {b_{1}^{}  - a_{1}^{} } \hfill & {b_{2}^{}  - a_{2}^{} } \hfill &
+{b_{3}^{}  - a_{3}^{} } \hfill & {0} \hfill  \\
+  {c_{1}^{}  - a_{1}^{} } \hfill & {c_{2}^{}  - a_{2}^{} } \hfill &
+{c_{3}^{}  - a_{3}^{} } \hfill & {0} \hfill  \\
+\end{array} }} \right|\,\, = \,\,
+\left| {{\begin{array}{*{20}c}
+  {x - a_{1}^{} } \hfill & {y - a_{2}^{} } \hfill & {z - a_{3}^{} } \hfill
+\\
+  {b_{1}^{}  - a_{1}^{} } \hfill & {b_{2}^{}  - a_{2}^{} } \hfill &
+{b_{3}^{}  - a_{3}^{} } \hfill  \\
+  {c_{1}^{}  - a_{1}^{} } \hfill & {c_{2}^{}  - a_{2}^{} } \hfill &
+{c_{3}^{}  - a_{3}^{} } \hfill  \\
+\end{array} }} \right| = 0.
+\]
+
+%\end{document}
