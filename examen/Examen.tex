@@ -1,0 +1,84 @@
+\documentclass [a4paper,12pt]{article}
+\usepackage{epsfig,amsmath,amsthm,amsfonts,amssymb}
+\usepackage{graphicx,epsfig,epsf}
+\usepackage[spanish]{babel} % Manejo de idiomas
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc} % Escritura en castellano con acentos
+%Escritura tipo Caligrafía
+\usepackage{calligra}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Teorema}
+\newtheorem{lemma}{Lema}
+\newtheorem{proposition}{Proposición}
+\newtheorem{corollary}{Corolario}
+\newtheorem{assumption}{Suposición}
+\newtheorem{definition}{Definición}
+\newtheorem{example}{Ejemplo}
+\newtheorem{note}{Observación}
+\newtheorem{exercise}{Ejercicio}
+\newtheorem{remark}{Observaci\'on}
+
+\usepackage[T1]{fontenc} % Escritura en castellano con acentos
+
+\usepackage{times} % Fuente de letras
+
+\begin{document}
+\begin{figure}[htbp]
+\scalebox{0.25}{\includegraphics{oficial_450.ps}}
+\end{figure}
+\vspace{-2.5cm}
+\begin{center}
+{\Large Universidad Nacional Mayor de San Marcos}\\
+{\calligra Universidad de Perú, Decana de América}\\
+Facultad de Ciencias Matemáticas\\
+E.A.P. Computación Científica\\
+\end{center}
+\begin{center}
+\textbf{Análisis Funcional II}\\
+\textbf{Exámen Parcial}
+\end{center}
+\vskip1cm
+\begin{enumerate}
+
+\item
+\textbf{5 puntos}\\
+Enuncie y demuestre alguna de las versiones del Teorema de Hanh Banach (Espacios Vectoriales o de Banach).
+
+\item
+
+Sea $X$ un espacio normado sobre $\mathbb{K}$. Demuestre que:
+\begin{enumerate}
+\item
+si $L$ un subespacio vectorial de $X$ entonces para todo $u_0 \in X$ con
+\[ dist(u_0,L) >0 \]
+existe una funcional lineal continua $f:X \rightarrow \mathbb{K}$ tal que
+\[f(u) = 0, \hskip.5cm \mbox{para todo} \hskip.5cm u \in L \]
+con $\|f\| =1$ y $f(u_0)=dist(u_0,L)$.  \textbf{6 puntos}
+\item
+Si $u \in X$ y 
+\[f(u)= 0  \hskip1cm \forall f \in X^* \]
+entonces $u=0$. \\
+\textbf{4 puntos}
+\end{enumerate}
+
+
+\item
+\textbf{5 puntos}
+Sean $A$ y $B$ conjuntos convexos no vacios en el espacio normado real $X$. Usando el Teorema de Hanh Banach, demuestre que
+\begin{enumerate}
+\item
+$A$ y $B$ pueden ser estrictamente separados por un hiperplano provisto de las condiciones
+\[B \bigcap Int(A) = \phi  \hskip1cm Int(A)\neq \phi\]
+\item
+$A$ y $B$ pueden ser separados por un hiperplano cerrado provisto de las condiciones
+\[B \bigcap A = \phi \]
+y ambos son conjuntos abiertos.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+\vskip1cm  RLC \hskip8cm Sem 2010-II
+
+\end{document}
